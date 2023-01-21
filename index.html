@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css" class="cs">
+
+  </head>
+  <body>
+    <main>
+      <h1> >TO DO LIST< </h1>
+ 
+      <input type="text" name="item-name" id="item-name" placeholder="ITEM NAME" />
+      <input type="date" name="deadline" id="deadline" placeholder="DEADLINE" />
+ 
+      <select name="priority" id="priority">
+        <option value="">Priority</option>
+        <option value="high">HIGH</option>
+        <option value="medium">MEDIUM</option>
+        <option value="low">LOW</option>
+      </select>
+ 
+      <button id="addItem">ADD</button>
+    </main>
+    <h3 id="error"></h3>
+ 
+    <h2>TODAY'S LIST</h2>
+    <div class="flex">
+      <table id="today">
+        <tbody id="t-body"></tbody>
+      </table>
+    </div>
+ 
+    <h2>FUTURE TO-TO LIST </h2>
+    <div class="flex">
+      <table id="future">
+        <tbody id="t-future"></tbody>
+      </table>
+    </div>
+ 
+    <h2>COMPLETED LIST </h2>
+    <div class="flex">
+      <table id="complete">
+        <tbody id="t-complete"></tbody>
+      </table>
+    </div> 
+    <script src="./scripts.js"></script>
+  </body> 
+  </html>
